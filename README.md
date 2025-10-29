@@ -28,8 +28,8 @@ Website ini dikembangkan menggunakan **PHP Native** dan **MySQL** untuk membantu
 ## 🧩 Teknologi yang Digunakan
 | Komponen | Teknologi |
 |-----------|------------|
-| Frontend  | HTML, CSS, JavaScript, Bootstrap |
-| Backend   | PHP Native |
+| Frontend  | HTML, CSS, Bootstrap |
+| Backend   | PHP Native, JavaScript |
 | Database  | MySQL |
 | Tools     | XAMPP, phpMyAdmin |
 
