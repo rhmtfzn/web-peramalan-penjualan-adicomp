@@ -9,7 +9,7 @@
 
 ---
 
-Aplikasi ini merupakan hasil dari penelitian skripsi berjudul **“Perbandingan Metode Weighted Moving Average (WMA) dan Single Exponential Smoothing (SES) dalam Peramalan Penjualan Berbasis Website (Studi Kasus: Toko Adi Comp)”**.  
+Aplikasi ini dikembangkan sebagai bagian dari penelitian akademik yang membahas penerapan metode peramalan penjualan berbasis website. 
 Website ini dikembangkan menggunakan **PHP Native** dan **MySQL** untuk membantu toko melakukan **peramalan penjualan** berdasarkan data historis penjualan.
 
 ---
@@ -28,7 +28,7 @@ Website ini dikembangkan menggunakan **PHP Native** dan **MySQL** untuk membantu
 ## 🧩 Teknologi yang Digunakan
 | Komponen | Teknologi |
 |-----------|------------|
-| Frontend  | HTML, CSS, Bootstrap |
+| Frontend  | HTML, CSS, JavaScript, Bootstrap |
 | Backend   | PHP Native |
 | Database  | MySQL |
 | Tools     | XAMPP, phpMyAdmin |
