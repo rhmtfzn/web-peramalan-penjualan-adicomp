@@ -1,0 +1,311 @@
+/* Styling untuk tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styling untuk hasil prediksi */
+.hasil-prediksi {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Styling untuk tab */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.tab-button.active {
+    background: #ff5c5c;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 5px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Styling untuk tabel riwayat */
+.riwayat-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.riwayat-table th, .riwayat-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.riwayat-table th {
+    background-color: #f2f2f2;
+}
+
+.riwayat-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Styling untuk badge */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-wma {
+    background-color: #4CAF50;
+}
+
+.badge-ses {
+    background-color: #2196F3;
+}
+
+/* Styling untuk tindakan button */
+.tindakan {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-detail {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-hapus {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Styling untuk modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #e48585; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label Styling */
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold;
+}
+
+/* Select and Input Styling */
+select, input[type="text"], input[type="number"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid rgb(210, 124, 124); 
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #ff5c5c; 
+    color: black; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #ff5c5c;
+}
+
+/* Small Text Styling */
+small {
+    display: block; 
+    margin-top: -10px; 
+    margin-bottom: 15px; 
+    color: black; 
+    font-size: 14px;
+}
+
+
+/* Styling khusus untuk input readonly dengan class */
+.readonly-input {
+    background-color: #f5f5f5 !important;
+    cursor: not-allowed !important;
+    border: 1px solid #ccc !important;
+    color: #bdbebd !important;
+    width: 100% !important;
+    padding: 10px !important;
+    margin-bottom: 5px !important; /* Kurangi margin bottom */
+    border-radius: 5px !important;
+    font-size: 16px !important;
+}
+
+.readonly-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Perbaikan struktur untuk div options */
+#wma-options, #ses-options {
+    margin-bottom: 0px; /* Hilangkan margin bottom ekstra */
+}
+
+/* Perbaikan untuk small text di options */
+#wma-options small, #ses-options small {
+    margin-top: 0px !important;
+    margin-bottom: 15px !important;
+    display: block;
+    color: black;
+    font-size: 14px;
+}
+
+/* Pastikan label di options memiliki spacing yang sama */
+#wma-options label, #ses-options label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+.rekomendasi {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid;
+}
+
+.rekomendasi-lebih {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+.rekomendasi-kurang {
+    background-color: #f8d7da;
+    border-left-color: #dc3545;
+    color: #721c24;
+}
+
+.rekomendasi-sesuai {
+    background-color: #d1ecf1;
+    border-left-color: #17a2b8;
+    color: #0c5460;
+}
+
+.riwayat-table .rekomendasi-lebih {
+    color: #28a745;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.riwayat-table .rekomendasi-kurang {
+    color: #dc3545;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.riwayat-table .rekomendasi-sesuai {
+    color: #17a2b8;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+}

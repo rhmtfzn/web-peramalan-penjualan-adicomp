@@ -1,0 +1,181 @@
+/* Perbaikan untuk bentrok antara sidebar dan bootstrap */
+.navigation {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #ff5c5c;
+    border-left: 10px solid #ff5c5c;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1000; /* Tambahkan z-index yang lebih tinggi */
+}
+
+.navigation.active {
+    width: 80px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 0; /* Reset padding Bootstrap */
+    margin-bottom: 0; /* Reset margin Bootstrap */
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 0; /* Reset margin Bootstrap */
+}
+
+.navigation ul li:hover,
+.navigation ul li.active {
+    background: #fff;
+}
+
+.navigation ul li:nth-child(1) {
+    margin-bottom: 40px;
+    pointer-events: none;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li:hover a,
+.navigation ul li.active a {
+    color: #ff5c5c;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation ul li a .icon ion-icon {
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+/* Main Content */
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: #f5f5f5;
+    transition: 0.5s;
+}
+
+.main.active {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.topbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.toggle {
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .navigation {
+        left: -300px;
+    }
+    
+    .navigation.active {
+        width: 300px;
+        left: 0;
+    }
+    
+    .main {
+        width: 100%;
+        left: 0;
+    }
+    
+    .main.active {
+        left: 300px;
+    }
+}
+
+/* Perbaikan konflik dengan Bootstrap */
+.navigation ul li a:hover {
+    text-decoration: none;
+    color: #ff5c5c;
+}
+
+.navigation ul li.active a {
+    font-weight: 500;
+}
+
+
+
+/* CSS untuk modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Perbaikan form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Responsif untuk modal */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+}

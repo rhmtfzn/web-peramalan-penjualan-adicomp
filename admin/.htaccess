@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /adicomp/admin/
+
+# Redirect URL yang terlihat seperti /adicomp/admin/namafile.php ke /adicomp/admin/namafile
+RewriteCond %{THE_REQUEST} /adicomp/admin/([^\.]+)\.php [NC]
+RewriteRule ^([^\.]+)\.php$ /adicomp/admin/$1 [L,R=301]
+
+# Menangani permintaan ke URL yang sudah "bersih" seperti /adicomp/admin/namafile
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# Khusus untuk halaman default (dashboard)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ dashboard.php [L]

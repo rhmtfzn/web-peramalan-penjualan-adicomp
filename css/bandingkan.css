@@ -1,0 +1,76 @@
+.chart-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.comparison-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comparison-result {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.method-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.method-card h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.best-method {
+    background-color: #e8f5e9;
+    border-left: 5px solid #4caf50;
+}
+
+.winner-badge {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.conclusion {
+    background-color: #f5f5f5;
+    border-left: 5px solid #2196f3;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.method-detail {
+    margin-top: 15px;
+}
+
+.method-detail p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.method-detail .label {
+    font-weight: bold;
+    flex: 1;
+}
+
+.method-detail .value {
+    flex: 1;
+    text-align: right;
+}

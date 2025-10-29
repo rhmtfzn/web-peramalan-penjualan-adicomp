@@ -1,0 +1,54 @@
+/* Styling untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff5c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container login */
+.login-container {
+    background-color: #ff5c5c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul */
+h2 {
+    color: black;
+    font-weight: bold;
+}
+
+/* Input field */
+input {
+    width: 90%; /* Lebar dikurangi sedikit agar tidak mepet */
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff9f9f;
+    font-size: 16px;
+    box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar */
+    text-indent: 10px; /* Geser teks ke kanan agar tidak mepet */
+}
+
+/* Tombol login */
+button {
+    background-color: #f5f5f5;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ddd;
+}
